@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transactions",
+  "info": {
+    "name": "transaction"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "amount_borrowed": {
+      "type": "biginteger",
+      "required": true
+    },
+    "interest_rate": {
+      "type": "decimal"
+    },
+    "schedules": {
+      "type": "json"
+    },
+    "release_date": {
+      "type": "date",
+      "required": true
+    },
+    "borrower": {
+      "model": "borrower"
+    }
+  }
+}
