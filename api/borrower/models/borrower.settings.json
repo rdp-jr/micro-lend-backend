@@ -19,9 +19,6 @@
       "type": "text",
       "required": true
     },
-    "transactions": {
-      "collection": "transaction"
-    },
     "contact_number": {
       "type": "string",
       "required": true,
